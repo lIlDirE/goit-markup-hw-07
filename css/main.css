@@ -179,6 +179,13 @@ img {
 }
 
 .header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -189,20 +196,8 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-contacts:hover,
-.header-contacts:focus {
+.header-contacts:hover, .header-contacts:focus {
   color: var(--second-text-color);
-}
-
-.header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 }
 
 .header-svg {
@@ -229,8 +224,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-
-.contacts-li:not(:first-child) {
+.contacts-list:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -787,7 +781,6 @@ address {
           align-items: baseline;
   padding: 0;
 }
-
 .footer-left-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -799,7 +792,6 @@ address {
           flex-direction: column;
   width: 230px;
 }
-
 .footer-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -807,7 +799,6 @@ address {
   width: 145px;
   height: 30px;
 }
-
 .footer-alladress {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,14 +811,6 @@ address {
   width: 230px;
   height: 80px;
 }
-
-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
 .footer-contacts-item {
   margin-top: 20px;
   font-weight: 400;
@@ -839,7 +822,6 @@ address {
 .footer-contacts-item:hover, .footer-contacts-item:focus {
   color: var(--second-text-color);
 }
-
 .footer-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -850,6 +832,26 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.footer-item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 205px;
+  height: 45px;
+  margin-top: 20px;
+}
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 
 .connect {
@@ -863,21 +865,6 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.footer-item-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 205px;
-  height: 45px;
-  margin-top: 20px;
-}
-
-.footer-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer-svg {

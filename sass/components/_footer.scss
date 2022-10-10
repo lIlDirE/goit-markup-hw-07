@@ -8,27 +8,62 @@
 	align-items: baseline;
 	padding: 0;
 
-}
+	&-left-container{
+		display: flex;
+		margin-left: 215px;
+		flex-direction: column;
+		width: 230px;
+	}
 
-.footer-left-container{
-	display: flex;
-	margin-left: 215px;
-	flex-direction: column;
-	width: 230px;
-}
+	&-logo{
+		display: flex;
+		width: 145px;
+		height: 30px;	
+	}
 
-.footer-logo{
-	display: flex;
-	width: 145px;
-	height: 30px;	
-}
+	&-alladress{
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		width: 230px;
+		height: 80px;
+	}
 
-.footer-alladress{
-	display: flex;
-	flex-direction: column;
-	margin-top: 20px;
-	width: 230px;
-	height: 80px;
+
+
+	&-contacts-item {
+		margin-top: 20px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+		color: var(--third-text-color);
+
+		&:hover,
+		&:focus {
+			color: var(--second-text-color);
+		}
+	}
+
+	&-logo {
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 31px;
+		letter-spacing: 0.03em;
+		color: var(--four-text-color);
+		display: flex;
+	}
+	&-item-box{
+		display: flex;
+		width: 205px;
+		height: 45px;
+		margin-top: 20px;
+	}
+	
+	&-social{
+		display: flex;
+	}
 }
 
 address {
@@ -38,47 +73,12 @@ address {
 	letter-spacing: 0.03em;
 }
 
-.footer-contacts-item {
-	margin-top: 20px;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.03em;
-	color: var(--third-text-color);
-
-	&:hover,
-	&:focus {
-		color: var(--second-text-color);
-	}
-}
-
-.footer-logo {
-	font-family: 'Raleway';
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
-	color: var(--four-text-color);
-	display: flex;
-}
-
 .connect{
 	display: flex;
 	width: 205px;
 	height: 80px;
 	margin-left: 70px;
 	flex-direction: column;
-}
-
-.footer-item-box{
-	display: flex;
-	width: 205px;
-	height: 45px;
-	margin-top: 20px;
-}
-
-.footer-social{
-	display: flex;
 }
 
 .footer-svg{
